@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="betting_game.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container text-center">
+        <p><h1 class="text-center"><strong>WANNA BET?</strong></h1></p>
+        <form id="form" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-5 control-label">Place a Bet:</label>
+            <div class="col-sm-2">
+              <input id="playerBet" placeholder="between 5 and 10" class="form-control" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-5 control-label">Guess a number between 1 and 10:</label>
+            <div class="col-sm-2">
+              <input id="playerGuess" placeholder="1 and 10" class="form-control" required>
+            </div>
+          </div>
+        </form>
+
+      <button type="button" id="input" class="btn btn-primary btn-lg active">Here goes nothing!!</button>
+      
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <hr>
+
+          <h4 id="result" class="bg-danger"></h4>
+          <div id="restart_button"></div>
+
+          <hr>
+          <h4 id="displayGuess"></h4>
+          <h4 id="displayRandom"></h4>
+
+          <hr>
+        </div>
+      </div>
+      
+      <div>
+        <h4 style="height: 30px; margin: 0px;"><strong>Bankroll Balance</strong></h4>
+        <progress id="statusBar" value="100" max="100" class="progress"></progress>
+      </div>      
+    </div>
+  </body>
+</html>
+
+
